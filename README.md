@@ -22,7 +22,7 @@ Todos os textos estao em `src/content/content.pt-BR.json`.
 ## SEO
 Title/description/OG em `site` no JSON; JSON-LD Organization em `src/layouts/Base.astro`; `sitemap.xml` e `robots.txt` sao gerados no build a partir do dominio.
 - `SITE_URL` (opcional) muda o dominio usado em canonical/OG/sitemap. Padrao: https://integrasolucoesinteligentes.com
-- `PUBLIC_NOINDEX=1` no build gera `noindex` e robots bloqueando tudo (use em previas).
+- Prévias da Vercel ficam em noindex automaticamente (VERCEL_ENV diferente de production); a produção é indexável.
 
 ## Deploy (Vercel)
 Previa: importe a pasta/zip como projeto Vercel NOVO (framework Astro, build `npm run build`, saida `dist`). Use `PUBLIC_NOINDEX=1` nas variaveis de ambiente da previa.

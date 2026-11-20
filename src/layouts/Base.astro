@@ -4,7 +4,9 @@ const { title = content.site.title, description = content.site.description, path
 const site = (Astro.site ?? new URL('https://integrasolucoesinteligentes.com')).toString().replace(/\/$/, '');
 const canonical = site + path;
 const ogImage = site + '/og-image-1200x630.jpg';
-const forceNoindex = noindex || import.meta.env.PUBLIC_NOINDEX === '1';
+// noindex automático em qualquer ambiente da Vercel que não seja produção (prévias)
+const isPreview = !!process.env.VERCEL_ENV && process.env.VERCEL_ENV !== 'production';
+const forceNoindex = noindex || isPreview;
 const c = content.contact;
 const sameAs = [c.instagram, c.linkedinCompany].filter(Boolean);
 const org = {

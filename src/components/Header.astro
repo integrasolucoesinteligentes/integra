@@ -1,0 +1,25 @@
+---
+import content from '../content/content.pt-BR.json';
+const { nav, contact: c, site } = content;
+const wa = `https://wa.me/${c.whatsappNumber}?text=${encodeURIComponent(c.whatsappMessage)}`;
+const { home = false } = Astro.props;
+const pre = home ? '' : '/';
+---
+<a class="skip" href="#conteudo">{nav.skip}</a>
+<header class="header" id="topo">
+  <div class="container header-in">
+    <a class="logo" href="/" aria-label={`${site.name}, ir para o início`}>
+      <img src="/img/logo-header-escuro.svg" alt={site.name} width="239" height="32" />
+    </a>
+    <nav class="nav" aria-label="Principal">
+      {nav.items.map((i) => <a href={pre + i.href}>{i.label}</a>)}
+      <a class="btn btn-primary" href={wa} target="_blank" rel="noopener noreferrer">{nav.cta}<span class="sr-only"> (abre em nova aba)</span></a>
+    </nav>
+  </div>
+</header>
+<style is:global>
+  .sr-only { position:absolute; width:1px; height:1px; margin:-1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+</style>
+<script is:inline>
+  (function(){var h=document.getElementById('topo');function f(){h.classList.toggle('scrolled',window.scrollY>24)}f();addEventListener('scroll',f,{passive:true});})();
+</script>

@@ -1,0 +1,129 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+import content from '../content/content.pt-BR.json';
+const { hero, pillars, process, audience, differentials, about, cta, contact: c } = content;
+const wa = `https://wa.me/${c.whatsappNumber}?text=${encodeURIComponent(c.whatsappMessage)}`;
+const mail = `mailto:${c.email}?subject=${encodeURIComponent(c.emailSubject)}&body=${encodeURIComponent(c.emailBody)}`;
+const initial = (n: string) => n.trim().charAt(0).toUpperCase();
+---
+<Base path="/">
+  <Header home />
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="h-hero">
+      <div class="container">
+        <p class="eyebrow">{hero.eyebrow}</p>
+        <h1 id="h-hero">{hero.headlinePre} <span class="l2"><strong>{hero.headlineStrong}</strong></span></h1>
+        <p class="sub">{hero.subhead}</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href={wa} target="_blank" rel="noopener noreferrer">{hero.ctaPrimary}<span class="sr-only"> (abre em nova aba)</span></a>
+          <a class="btn btn-ghost" href={mail}>{hero.ctaSecondary}</a>
+        </div>
+        <p class="note">{hero.note}</p>
+      </div>
+    </section>
+
+    <section id="pilares" class="dark-2" aria-labelledby="h-pilares">
+      <div class="container">
+        <div class="sec-head">
+          <p class="eyebrow">{pillars.eyebrow}</p>
+          <h2 id="h-pilares">{pillars.title}<strong>{pillars.titleStrong}</strong></h2>
+          <p class="lead">{pillars.intro}</p>
+        </div>
+        <ul class="pillars">
+          {pillars.items.map((p, i) => (
+            <li class="card pillar">
+              <span class="num">0{i + 1}</span>
+              <h3>{p.name}</h3>
+              <p class="lead">{p.lead}</p>
+              <p class="txt">{p.text}</p>
+              <ul>{p.points.map((pt) => <li>{pt}</li>)}</ul>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <section id="como-trabalhamos" class="light" aria-labelledby="h-proc">
+      <div class="container">
+        <div class="sec-head">
+          <p class="eyebrow">{process.eyebrow}</p>
+          <h2 id="h-proc">{process.title}<strong>{process.titleStrong}</strong></h2>
+          <p class="lead">{process.intro}</p>
+        </div>
+        <ol class="steps">
+          {process.steps.map((s) => (
+            <li class="step"><div class="n" aria-hidden="true">{s.n}</div><h3>{s.title}</h3><p>{s.text}</p></li>
+          ))}
+        </ol>
+      </div>
+    </section>
+
+    <section id="para-quem" aria-labelledby="h-aud">
+      <div class="container aud">
+        <div class="sec-head" style="margin-bottom:0">
+          <p class="eyebrow">{audience.eyebrow}</p>
+          <h2 id="h-aud">{audience.title}<strong>{audience.titleStrong}</strong></h2>
+          <p class="lead">{audience.intro}</p>
+        </div>
+        <div class="card box">
+          <h3>{audience.signalsTitle}</h3>
+          <ul class="signals">{audience.signals.map((s) => <li>{s}</li>)}</ul>
+          <p class="fit">{audience.fitNote}</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="diferenciais" class="light" aria-labelledby="h-diff">
+      <div class="container">
+        <div class="sec-head">
+          <p class="eyebrow">{differentials.eyebrow}</p>
+          <h2 id="h-diff">{differentials.title}<strong>{differentials.titleStrong}</strong></h2>
+        </div>
+        <ul class="diffs">
+          {differentials.items.map((d) => <li class="diff"><h3>{d.title}</h3><p>{d.text}</p></li>)}
+        </ul>
+      </div>
+    </section>
+
+    <section id="sobre" class="dark-2" aria-labelledby="h-sobre">
+      <div class="container about">
+        <div>
+          <div class="sec-head" style="margin-bottom:24px">
+            <p class="eyebrow">{about.eyebrow}</p>
+            <h2 id="h-sobre">{about.title}<strong>{about.titleStrong}</strong></h2>
+          </div>
+          <div class="txt">{about.text.map((t) => <p>{t}</p>)}</div>
+        </div>
+        <ul class="people">
+          {about.people.map((p, i) => (
+            <li class="card person">
+              <div class="avatar" aria-hidden="true">{initial(p.name)}</div>
+              <div>
+                <h3>{p.name}</h3>
+                <p class="role">{p.role}</p>
+                <p class="bio">{p.bio}</p>
+                {(i === 0 ? c.linkedinFounder : p.linkedin) && <p class="links"><a href={i === 0 ? c.linkedinFounder : p.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`LinkedIn de ${p.name}`}>LinkedIn</a></p>}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato" class="cta" aria-labelledby="h-cta">
+      <div class="container">
+        <h2 id="h-cta">{cta.title}<strong>{cta.titleStrong}</strong></h2>
+        <p class="t">{cta.text}</p>
+        <div class="row">
+          <a class="btn btn-primary" href={wa} target="_blank" rel="noopener noreferrer">{cta.primary}<span class="sr-only"> (abre em nova aba)</span></a>
+          <a class="btn btn-ghost" href={mail}>{cta.secondary}</a>
+        </div>
+        <p class="hint">{cta.hint}</p>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Base>

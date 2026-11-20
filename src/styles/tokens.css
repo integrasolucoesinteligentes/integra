@@ -1,0 +1,46 @@
+/* INTEGRA — tokens de marca v1.0 (2026-11-20)
+   Fonte: Outfit (Google Fonts) — pesos 200, 300, 400, 500, 600
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet"> */
+:root {
+  /* Cores — escuro (padrão) */
+  --integra-bg: #060D1A;
+  --integra-bg-2: #0B1628;
+  --integra-bg-3: #101E36;
+  --integra-blue: #4DA3FF;        /* acento principal */
+  --integra-blue-deep: #1E7BFF; /* botões / hover forte */
+  --integra-blue-ink: #1565D8;   /* azul sobre fundo claro */
+  --integra-text: #F4F7FB;
+  --integra-text-mute: #8FA0B8;
+  --integra-line: rgba(255, 255, 255, 0.10);
+
+  /* Cores — claro (seções de leitura) */
+  --integra-light-bg: #F4F7FB;
+  --integra-light-text: #0B1628;
+  --integra-light-mute: #4A5B75;
+
+  /* Tipografia */
+  --font-sans: 'Outfit', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fs-display: clamp(2.6rem, 6vw, 5.5rem);  /* peso 300, com a palavra-chave em 600 + azul */
+  --fs-h2: clamp(2rem, 4vw, 3.25rem);
+  --fs-h3: 1.5rem;
+  --fs-body: 1.0625rem;
+  --fs-eyebrow: 0.8125rem;                   /* caixa alta, tracking 0.3em, azul */
+
+  /* Forma e espaço */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --space: 8px;
+  --container: 1180px;
+  --glow: 0 0 40px rgba(77, 163, 255, 0.35);
+}
+body { background: var(--integra-bg); color: var(--integra-text); font-family: var(--font-sans); font-weight: 300; font-size: var(--fs-body); line-height: 1.6; }
+h1, h2, h3 { font-weight: 300; letter-spacing: -0.01em; line-height: 1.1; }
+h1 strong, h2 strong, h3 strong { font-weight: 600; }
+.accent { color: var(--integra-blue); }
+.eyebrow { font-size: var(--fs-eyebrow); letter-spacing: 0.3em; text-transform: uppercase; color: var(--integra-blue); font-weight: 400; }
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; border-radius: var(--radius-md); font-weight: 500; letter-spacing: 0.02em; transition: box-shadow .2s, background .2s; }
+.btn-primary { background: var(--integra-blue-deep); color: #fff; }
+.btn-primary:hover { box-shadow: var(--glow); }
+.btn-ghost { border: 1px solid rgba(77,163,255,.5); color: var(--integra-text); }
+.card { background: var(--integra-bg-2); border: 1px solid var(--integra-line); border-radius: var(--radius-lg); padding: 32px; }

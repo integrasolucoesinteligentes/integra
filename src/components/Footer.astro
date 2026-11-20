@@ -1,0 +1,24 @@
+---
+import content from '../content/content.pt-BR.json';
+const { footer: f, contact: c, site } = content;
+const wa = `https://wa.me/${c.whatsappNumber}?text=${encodeURIComponent(c.whatsappMessage)}`;
+---
+<footer class="footer">
+  <div class="container footer-in">
+    <div>
+      <img src="/img/logo-header-escuro.svg" alt={site.name} width="239" height="32" />
+      <p>{f.tagline}</p>
+      <p>{f.location}</p>
+    </div>
+    <ul aria-label="Contato">
+      <li><a href={wa} target="_blank" rel="noopener noreferrer">WhatsApp {c.whatsappDisplay}</a></li>
+      <li><a href={`mailto:${c.email}`}>{c.email}</a></li>
+      <li><a href={c.instagram} target="_blank" rel="noopener noreferrer">Instagram {c.instagramHandle}</a></li>
+      {c.linkedinCompany && <li><a href={c.linkedinCompany} target="_blank" rel="noopener noreferrer">LinkedIn da INTEGRA</a></li>}
+    </ul>
+    <ul aria-label="Informações legais">
+      <li><a href="/privacidade/">{f.privacyLabel}</a></li>
+    </ul>
+    <p class="small">© {new Date().getFullYear()} {f.rights}{f.cnpj ? ` CNPJ ${f.cnpj}.` : ''}</p>
+  </div>
+</footer>

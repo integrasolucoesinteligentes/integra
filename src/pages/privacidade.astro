@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+import content from '../content/content.pt-BR.json';
+const p = content.privacy;
+---
+<Base title={`${p.title} | ${content.site.name}`} description={p.metaDescription} path="/privacidade/">
+  <Header />
+  <main id="conteudo" class="doc">
+    <div class="container">
+      <h1>{p.title}</h1>
+      <p class="meta">Atualizado em {p.updated}</p>
+      {p.sections.map((s) => (<><h2>{s.h}</h2>{s.p.map((t) => <p>{t}</p>)}</>))}
+      <p style="margin-top:40px"><a href="/">{p.back}</a></p>
+    </div>
+  </main>
+  <Footer />
+</Base>

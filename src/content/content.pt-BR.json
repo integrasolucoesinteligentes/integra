@@ -1,0 +1,307 @@
+{
+  "_leia-me": "TODOS os textos do site estao neste arquivo. Campos com \"_status\": \"RASCUNHO\" sao copy provisoria, a ser trocada pelo posicionamento oficial. Para trocar o posicionamento, edite apenas este arquivo; o layout nao muda.",
+  "site": {
+    "name": "INTEGRA Soluções Inteligentes",
+    "shortName": "INTEGRA",
+    "tagline": "Tecnologia aplicada a negócios reais.",
+    "lang": "pt-BR",
+    "title": "INTEGRA Soluções Inteligentes | Operações mais simples. Negócios mais fortes.",
+    "description": "Processos, dados e inteligência artificial para organizar a operação comercial de imobiliárias, construtoras e outras empresas. Integração de CRM, automações, painéis e agentes de IA. Florianópolis/SC, atendimento remoto em todo o Brasil.",
+    "ogAlt": "INTEGRA Soluções Inteligentes: operações mais simples, negócios mais fortes",
+    "locality": "Florianópolis",
+    "region": "SC",
+    "country": "BR",
+    "serviceArea": "Brasil (atendimento remoto)",
+    "_status": "RASCUNHO"
+  },
+  "contact": {
+    "whatsappNumber": "5548996899536",
+    "whatsappDisplay": "+55 48 96899536",
+    "whatsappMessage": "Olá! Vim pelo site da INTEGRA e gostaria de conversar sobre como organizar a operação da minha empresa.",
+    "email": "contato@integrasolucoesinteligentes.com",
+    "emailSubject": "Contato pelo site da INTEGRA",
+    "emailBody": "Olá! Meu nome é ____ e minha empresa é ____.\n\nGostaria de conversar sobre: ____\n",
+    "instagram": "https://www.instagram.com/integrasolucoesinteligentes",
+    "instagramHandle": "@integrasolucoesinteligentes",
+    "linkedinCompany": "https://www.linkedin.com/company/integra-solucoes-inteligentes",
+    "linkedinFounder": "https://www.linkedin.com/in/urielsilvademoura/",
+    "linkedinTais": "https://www.linkedin.com/in/ta%C3%ADs-paula-moura-a54224435/"
+  },
+  "nav": {
+    "items": [
+      {
+        "label": "Pilares",
+        "href": "#pilares"
+      },
+      {
+        "label": "Como trabalhamos",
+        "href": "#como-trabalhamos"
+      },
+      {
+        "label": "Para quem é",
+        "href": "#para-quem"
+      },
+      {
+        "label": "Sobre",
+        "href": "#sobre"
+      }
+    ],
+    "cta": "Fale no WhatsApp",
+    "skip": "Ir para o conteúdo"
+  },
+  "hero": {
+    "_status": "RASCUNHO",
+    "eyebrow": "Processos • Dados • IA",
+    "headlinePre": "Operações mais simples.",
+    "headlineStrong": "Negócios mais fortes.",
+    "subhead": "A INTEGRA organiza o atendimento e os dados do seu comercial e usa inteligência artificial para que cada lead tenha dono, prazo e próximo passo.",
+    "ctaPrimary": "Fale no WhatsApp",
+    "ctaSecondary": "Envie um e-mail",
+    "note": "Para imobiliárias e construtoras · Florianópolis/SC · atendimento remoto em todo o Brasil"
+  },
+  "pillars": {
+    "_status": "RASCUNHO",
+    "eyebrow": "O que fazemos",
+    "title": "Três frentes, um mesmo objetivo: ",
+    "titleStrong": "a operação funcionando melhor.",
+    "intro": "Cada frente pode começar sozinha. Quando andam juntas, uma reforça a outra.",
+    "items": [
+      {
+        "key": "processos",
+        "name": "Processos",
+        "lead": "Do que acontece no dia a dia para um fluxo claro e registrado.",
+        "text": "Organizamos o caminho do contato até o fechamento no CRM que sua empresa já usa (ou ajudamos a escolher e implantar um). Depois automatizamos o que se repete, como avisos, distribuição de contatos e atualização de etapas, com n8n e com as ferramentas que você já tem.",
+        "points": [
+          "Implantação e ajuste de CRM, qualquer plataforma",
+          "Automação de tarefas repetidas (n8n)",
+          "Integração entre os sistemas da empresa"
+        ]
+      },
+      {
+        "key": "dados",
+        "name": "Dados",
+        "lead": "Do que está espalhado em planilhas e sistemas para uma visão única.",
+        "text": "Reunimos informações de diferentes sistemas, organizamos e entregamos em painéis que mostram o que acontece na operação, como o tempo até o primeiro atendimento de cada lead, para o gestor acompanhar sem depender de planilha montada à mão.",
+        "points": [
+          "Painéis de acompanhamento (BI)",
+          "Organização e integração de dados",
+          "Indicadores definidos com a sua equipe"
+        ]
+      },
+      {
+        "key": "ia",
+        "name": "IA",
+        "lead": "Da tarefa manual para um assistente que trabalha dentro do seu processo.",
+        "text": "Aplicamos inteligência artificial onde ela resolve um problema concreto: atendimento inicial, leitura e extração de informações de documentos, resumos e apoio à equipe comercial. Sempre ligada aos seus dados e ao seu processo, e com pessoas revisando o que importa.",
+        "points": [
+          "Agentes de atendimento ligados ao CRM",
+          "Leitura e extração de dados de documentos",
+          "Apoio à decisão com os seus próprios dados"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "_status": "RASCUNHO",
+    "eyebrow": "Como trabalhamos",
+    "title": "Quatro etapas, ",
+    "titleStrong": "sem mistério.",
+    "intro": "Você sabe o que vai acontecer em cada fase antes de ela começar.",
+    "steps": [
+      {
+        "n": "01",
+        "title": "Conversar e entender",
+        "text": "Ouvimos como a operação funciona hoje, onde o trabalho trava e o que você precisa melhorar primeiro."
+      },
+      {
+        "n": "02",
+        "title": "Desenhar o caminho",
+        "text": "Mapeamos o processo e propomos o que fazer, em que ordem e com quais ferramentas, em linguagem clara."
+      },
+      {
+        "n": "03",
+        "title": "Implantar e integrar",
+        "text": "Configuramos o CRM, criamos as automações e conectamos os sistemas, validando cada parte com a sua equipe."
+      },
+      {
+        "n": "04",
+        "title": "Treinar e acompanhar",
+        "text": "Treinamos o time, damos suporte no início do uso e ajustamos o que a prática mostrar que precisa mudar."
+      }
+    ]
+  },
+  "audience": {
+    "_status": "RASCUNHO",
+    "eyebrow": "Para quem é",
+    "title": "Para imobiliárias, construtoras e empresas que ",
+    "titleStrong": "querem organizar a operação comercial.",
+    "intro": "Nosso foco são imobiliárias e construtoras: equipes que recebem muitos contatos por portais, anúncios e WhatsApp e precisam acompanhar cada um até a venda. Também atendemos outras empresas que vendem por relacionamento, como corretoras de seguros.",
+    "signalsTitle": "Talvez seja o seu caso se:",
+    "signals": [
+      "Os leads chegam de vários canais e ninguém sabe ao certo quem atendeu, em quanto tempo e o que ficou combinado.",
+      "Contatos e negociações ficam em planilhas, mensagens e na cabeça de cada corretor.",
+      "Você não enxerga com clareza onde cada negociação está parada.",
+      "Já tem um CRM, mas ele não é usado por todos ou não reflete a realidade.",
+      "Quer usar inteligência artificial, mas não sabe por onde começar."
+    ],
+    "fitNote": "Se a sua empresa não se encaixa em nenhum desses pontos, ainda assim vale conversar. Dizemos com franqueza se podemos ou não ajudar."
+  },
+  "differentials": {
+    "_status": "RASCUNHO",
+    "eyebrow": "Por que a INTEGRA",
+    "title": "O que você pode esperar de ",
+    "titleStrong": "trabalhar com a gente.",
+    "items": [
+      {
+        "title": "Linguagem direta",
+        "text": "Explicamos o que será feito, por quê e para quê, sem jargão e sem promessas vagas."
+      },
+      {
+        "title": "Processo antes da ferramenta",
+        "text": "Primeiro entendemos como o trabalho acontece. A tecnologia entra para resolver um problema real, não por moda."
+      },
+      {
+        "title": "Tudo conectado",
+        "text": "CRM, automações, dados e IA pensados em conjunto, para não virar mais um sistema isolado."
+      },
+      {
+        "title": "Acompanhamento depois da entrega",
+        "text": "Treinamento e suporte fazem parte do trabalho, porque o resultado depende de a equipe usar."
+      },
+      {
+        "title": "Atendimento próximo",
+        "text": "Você fala diretamente com quem executa o projeto. Atendemos o Brasil de forma remota, a partir de Florianópolis."
+      },
+      {
+        "title": "Dados sob cuidado",
+        "text": "Tratamos as informações da sua empresa de acordo com a LGPD e só acessamos o que o projeto exige."
+      }
+    ]
+  },
+  "about": {
+    "_status": "RASCUNHO",
+    "eyebrow": "Sobre",
+    "title": "Uma equipe pequena, ",
+    "titleStrong": "perto de você.",
+    "text": [
+      "A INTEGRA Soluções Inteligentes nasceu em Florianópolis para ajudar empresas a transformar tecnologia em rotina de trabalho que funciona.",
+      "Combinamos conhecimento de processos, de sistemas e de inteligência artificial, e acompanhamos cada projeto de perto, da conversa inicial ao treinamento da equipe."
+    ],
+    "people": [
+      {
+        "name": "Uriel Silva de Moura",
+        "role": "Fundador",
+        "bio": "Atua com processos, CRM, integrações, dados e inteligência artificial aplicada a negócios."
+      },
+      {
+        "name": "Taís Paula dos Santos de Moura",
+        "role": "Equipe INTEGRA",
+        "bio": "Atua no suporte, no treinamento e no acompanhamento das equipes dos clientes.",
+        "linkedin": "https://www.linkedin.com/in/ta%C3%ADs-paula-moura-a54224435/"
+      }
+    ],
+    "photoNote": ""
+  },
+  "cta": {
+    "_status": "RASCUNHO",
+    "title": "Vamos conversar sobre a ",
+    "titleStrong": "sua operação?",
+    "text": "Conte em poucas linhas o que a sua empresa faz e onde o trabalho trava. Respondemos com os próximos passos possíveis.",
+    "primary": "Fale no WhatsApp",
+    "secondary": "Prefere e-mail? Escreva para nós",
+    "hint": "A conversa inicial serve para entender o seu caso. Não é preciso ter nada pronto."
+  },
+  "footer": {
+    "tagline": "Tecnologia aplicada a negócios reais.",
+    "location": "Florianópolis/SC · atendimento remoto em todo o Brasil",
+    "privacyLabel": "Privacidade (LGPD)",
+    "rights": "INTEGRA Soluções Inteligentes. Todos os direitos reservados.",
+    "cnpj": "50.058.642/0001-10"
+  },
+  "privacy": {
+    "title": "Privacidade e LGPD",
+    "metaDescription": "Como a INTEGRA trata dados pessoais neste site, em conformidade com a Lei Geral de Proteção de Dados (LGPD).",
+    "updated": "20/11/2026",
+    "back": "Voltar ao início",
+    "_status": "Revisada em 20/11/2026 contra a LGPD (Lei 13.709/2018) em uma revisão assistida por IA, que não substitui parecer de advogado. Pontos que dependem de decisão do Uriel: prazo de retenção e eventual nomeação de encarregado.",
+    "sections": [
+      {
+        "h": "Quem somos",
+        "p": [
+          "Este site é mantido pela INTEGRA Soluções Inteligentes, CNPJ 50.058.642/0001-10, de Florianópolis/SC, que atua como controladora dos dados pessoais descritos nesta página.",
+          "Para qualquer assunto sobre privacidade e dados pessoais, escreva para contato@integrasolucoesinteligentes.com. Esse é o nosso canal para os titulares de dados."
+        ]
+      },
+      {
+        "h": "Quais dados tratamos",
+        "p": [
+          "Este site não tem formulários, não cria contas e não usa cookies de publicidade nem de rastreamento. As fontes de texto são servidas pelo próprio site.",
+          "Tratamos dados pessoais apenas quando você escolhe falar conosco por WhatsApp ou e-mail: nome, telefone ou e-mail, empresa e o conteúdo da sua mensagem.",
+          "A hospedagem registra dados técnicos de acesso, como endereço IP, data e hora e tipo de navegador, necessários para a segurança e o funcionamento do site."
+        ]
+      },
+      {
+        "h": "Para que usamos e em que base legal",
+        "p": [
+          "Usamos esses dados para responder à sua mensagem e, se houver interesse, para conversar sobre uma possível contratação, o que se apoia nos procedimentos preliminares relacionados a contrato a pedido do titular (LGPD, art. 7º, V).",
+          "Os registros técnicos de acesso são tratados com base no nosso legítimo interesse em manter o site seguro e funcionando (art. 7º, IX), com o mínimo de dados necessário."
+        ]
+      },
+      {
+        "h": "Contato comercial feito por nós",
+        "p": [
+          "Podemos entrar em contato com empresas a partir de informações empresariais públicas, como o site institucional, para apresentar o nosso trabalho (legítimo interesse, art. 7º, IX). Nesse contato dizemos de onde vieram as informações e você pode pedir, a qualquer momento, que não entremos em contato de novo."
+        ]
+      },
+      {
+        "h": "Com quem compartilhamos",
+        "p": [
+          "Não vendemos os seus dados nem os compartilhamos para fins de marketing de terceiros.",
+          "As mensagens passam pelos serviços que você escolhe usar para falar conosco, como o WhatsApp e o seu provedor de e-mail, cada um com a sua política de privacidade. O site é hospedado em infraestrutura de terceiros (Vercel) e o nosso e-mail é operado pela Zoho, que podem processar dados em outros países. Nesses casos adotamos fornecedores que oferecem garantias de proteção compatíveis com a LGPD (art. 33)."
+        ]
+      },
+      {
+        "h": "Por quanto tempo guardamos",
+        "p": [
+          "Guardamos a conversa enquanto ela estiver em andamento e, se não houver contratação, por até 24 meses após o último contato, ou por mais tempo se a lei exigir. Depois disso, apagamos ou anonimizamos. Os registros técnicos de acesso são mantidos pelo período definido pelo provedor de hospedagem."
+        ]
+      },
+      {
+        "h": "Seus direitos",
+        "p": [
+          "Pela LGPD (art. 18), você pode pedir confirmação de que tratamos seus dados, acesso, correção, anonimização, bloqueio ou eliminação de dados desnecessários, portabilidade, informação sobre compartilhamento e a revogação do consentimento, quando ele for a base usada.",
+          "Escreva para contato@integrasolucoesinteligentes.com. Respondemos em até 15 dias. Se achar que não resolvemos, você pode apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD)."
+        ]
+      },
+      {
+        "h": "Crianças e adolescentes",
+        "p": [
+          "Este site é voltado a empresas e não se destina a menores de 18 anos."
+        ]
+      },
+      {
+        "h": "Links para outros sites",
+        "p": [
+          "Os links para LinkedIn, Instagram e WhatsApp levam a serviços de terceiros, que têm as suas próprias regras de privacidade."
+        ]
+      },
+      {
+        "h": "Mudanças nesta política",
+        "p": [
+          "Podemos atualizar esta página. A data da última atualização aparece no topo."
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "organizationDescription": "Processos, dados e inteligência artificial aplicados à operação comercial de imobiliárias, construtoras e outras empresas: integração de CRM, automações, painéis e agentes de IA.",
+    "knowsAbout": [
+      "CRM",
+      "Automação de processos",
+      "Integração de sistemas",
+      "Business Intelligence",
+      "Inteligência artificial aplicada a negócios",
+      "Mercado imobiliário"
+    ]
+  }
+}

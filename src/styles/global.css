@@ -145,3 +145,4 @@ section { padding:clamp(72px,10vw,128px) 0; position:relative; }
 .doc a { color:var(--integra-blue); }
 
 @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto;} *{transition:none!important;} }
+.light + .light { border-top:1px solid #DCE4EF; }

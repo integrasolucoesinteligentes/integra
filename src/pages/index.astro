@@ -25,6 +25,21 @@ const initial = (n: string) => n.trim().charAt(0).toUpperCase();
       </div>
     </section>
 
+    <section id="para-quem" aria-labelledby="h-aud">
+      <div class="container aud">
+        <div class="sec-head" style="margin-bottom:0">
+          <p class="eyebrow">{audience.eyebrow}</p>
+          <h2 id="h-aud">{audience.title}<strong>{audience.titleStrong}</strong></h2>
+          <p class="lead">{audience.intro}</p>
+        </div>
+        <div class="card box">
+          <h3>{audience.signalsTitle}</h3>
+          <ul class="signals">{audience.signals.map((s) => <li>{s}</li>)}</ul>
+          <p class="fit">{audience.fitNote}</p>
+        </div>
+      </div>
+    </section>
+
     <section id="pilares" class="dark-2" aria-labelledby="h-pilares">
       <div class="container">
         <div class="sec-head">
@@ -58,21 +73,6 @@ const initial = (n: string) => n.trim().charAt(0).toUpperCase();
             <li class="step"><div class="n" aria-hidden="true">{s.n}</div><h3>{s.title}</h3><p>{s.text}</p></li>
           ))}
         </ol>
-      </div>
-    </section>
-
-    <section id="para-quem" aria-labelledby="h-aud">
-      <div class="container aud">
-        <div class="sec-head" style="margin-bottom:0">
-          <p class="eyebrow">{audience.eyebrow}</p>
-          <h2 id="h-aud">{audience.title}<strong>{audience.titleStrong}</strong></h2>
-          <p class="lead">{audience.intro}</p>
-        </div>
-        <div class="card box">
-          <h3>{audience.signalsTitle}</h3>
-          <ul class="signals">{audience.signals.map((s) => <li>{s}</li>)}</ul>
-          <p class="fit">{audience.fitNote}</p>
-        </div>
       </div>
     </section>
 

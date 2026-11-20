@@ -17,7 +17,7 @@
   "contact": {
     "whatsappNumber": "5548996899536",
     "whatsappDisplay": "+55 48 96899536",
-    "whatsappMessage": "Olá! Vim pelo site da INTEGRA e gostaria de conversar sobre como organizar a operação da minha empresa.",
+    "whatsappMessage": "Olá! Vim pelo site da INTEGRA e gostaria de conversar sobre o atendimento de leads da minha empresa.",
     "email": "contato@integrasolucoesinteligentes.com",
     "emailSubject": "Contato pelo site da INTEGRA",
     "emailBody": "Olá! Meu nome é ____ e minha empresa é ____.\n\nGostaria de conversar sobre: ____\n",
@@ -30,16 +30,16 @@
   "nav": {
     "items": [
       {
-        "label": "Pilares",
+        "label": "Para quem é",
+        "href": "#para-quem"
+      },
+      {
+        "label": "O que fazemos",
         "href": "#pilares"
       },
       {
         "label": "Como trabalhamos",
         "href": "#como-trabalhamos"
-      },
-      {
-        "label": "Para quem é",
-        "href": "#para-quem"
       },
       {
         "label": "Sobre",
@@ -51,26 +51,26 @@
   },
   "hero": {
     "_status": "RASCUNHO",
-    "eyebrow": "Processos • Dados • IA",
-    "headlinePre": "Operações mais simples.",
-    "headlineStrong": "Negócios mais fortes.",
-    "subhead": "A INTEGRA organiza o atendimento e os dados do seu comercial e usa inteligência artificial para que cada lead tenha dono, prazo e próximo passo.",
+    "eyebrow": "Para imobiliárias e construtoras",
+    "headlinePre": "Todo lead com dono, prazo",
+    "headlineStrong": "e próximo passo.",
+    "subhead": "A INTEGRA organiza o atendimento, os dados e a inteligência artificial do seu comercial, para a equipe saber quem atendeu cada lead, em quanto tempo e o que fazer em seguida.",
     "ctaPrimary": "Fale no WhatsApp",
     "ctaSecondary": "Envie um e-mail",
-    "note": "Para imobiliárias e construtoras · Florianópolis/SC · atendimento remoto em todo o Brasil"
+    "note": "Operações mais simples. Negócios mais fortes. · Florianópolis/SC · atendimento remoto em todo o Brasil"
   },
   "pillars": {
     "_status": "RASCUNHO",
     "eyebrow": "O que fazemos",
-    "title": "Três frentes, um mesmo objetivo: ",
-    "titleStrong": "a operação funcionando melhor.",
+    "title": "Três frentes para o seu comercial: ",
+    "titleStrong": "processos, dados e IA.",
     "intro": "Cada frente pode começar sozinha. Quando andam juntas, uma reforça a outra.",
     "items": [
       {
         "key": "processos",
         "name": "Processos",
-        "lead": "Do que acontece no dia a dia para um fluxo claro e registrado.",
-        "text": "Organizamos o caminho do contato até o fechamento no CRM que sua empresa já usa (ou ajudamos a escolher e implantar um). Depois automatizamos o que se repete, como avisos, distribuição de contatos e atualização de etapas, com n8n e com as ferramentas que você já tem.",
+        "lead": "Cada lead com dono e próximo passo.",
+        "text": "Definimos o caminho do lead, da entrada até a venda, no CRM que sua empresa já usa (ou ajudamos a escolher e implantar um). Depois automatizamos o que se repete: avisos, distribuição de leads e atualização de etapas, com n8n e com as ferramentas que você já tem.",
         "points": [
           "Implantação e ajuste de CRM, qualquer plataforma",
           "Automação de tarefas repetidas (n8n)",
@@ -80,7 +80,7 @@
       {
         "key": "dados",
         "name": "Dados",
-        "lead": "Do que está espalhado em planilhas e sistemas para uma visão única.",
+        "lead": "O gestor vê o que acontece sem montar planilha.",
         "text": "Reunimos informações de diferentes sistemas, organizamos e entregamos em painéis que mostram o que acontece na operação, como o tempo até o primeiro atendimento de cada lead, para o gestor acompanhar sem depender de planilha montada à mão.",
         "points": [
           "Painéis de acompanhamento (BI)",
@@ -91,8 +91,8 @@
       {
         "key": "ia",
         "name": "IA",
-        "lead": "Da tarefa manual para um assistente que trabalha dentro do seu processo.",
-        "text": "Aplicamos inteligência artificial onde ela resolve um problema concreto: atendimento inicial, leitura e extração de informações de documentos, resumos e apoio à equipe comercial. Sempre ligada aos seus dados e ao seu processo, e com pessoas revisando o que importa.",
+        "lead": "A IA cuida do repetitivo. A pessoa cuida da negociação.",
+        "text": "Aplicamos inteligência artificial onde ela resolve um problema concreto: primeira resposta ao lead, leitura e extração de informações de documentos, resumos de conversa e apoio ao time comercial. Ligada aos seus dados e ao seu processo, com pessoas revisando o que importa.",
         "points": [
           "Agentes de atendimento ligados ao CRM",
           "Leitura e extração de dados de documentos",
@@ -133,9 +133,9 @@
   "audience": {
     "_status": "RASCUNHO",
     "eyebrow": "Para quem é",
-    "title": "Para imobiliárias, construtoras e empresas que ",
-    "titleStrong": "querem organizar a operação comercial.",
-    "intro": "Nosso foco são imobiliárias e construtoras: equipes que recebem muitos contatos por portais, anúncios e WhatsApp e precisam acompanhar cada um até a venda. Também atendemos outras empresas que vendem por relacionamento, como corretoras de seguros.",
+    "title": "Para imobiliárias e construtoras que ",
+    "titleStrong": "recebem mais leads do que conseguem acompanhar.",
+    "intro": "Nosso foco são equipes comerciais que recebem leads por portais, anúncios e WhatsApp e precisam acompanhar cada um até a venda.",
     "signalsTitle": "Talvez seja o seu caso se:",
     "signals": [
       "Os leads chegam de vários canais e ninguém sabe ao certo quem atendeu, em quanto tempo e o que ficou combinado.",
@@ -153,19 +153,19 @@
     "titleStrong": "trabalhar com a gente.",
     "items": [
       {
-        "title": "Linguagem direta",
-        "text": "Explicamos o que será feito, por quê e para quê, sem jargão e sem promessas vagas."
+        "title": "Você entende o que será feito",
+        "text": "Explicamos cada etapa e o motivo dela, na linguagem do dia a dia comercial."
       },
       {
-        "title": "Processo antes da ferramenta",
-        "text": "Primeiro entendemos como o trabalho acontece. A tecnologia entra para resolver um problema real, não por moda."
+        "title": "Primeiro o processo, depois a ferramenta",
+        "text": "Entendemos como o seu time trabalha antes de configurar qualquer coisa. A tecnologia entra para resolver um problema real."
       },
       {
-        "title": "Tudo conectado",
-        "text": "CRM, automações, dados e IA pensados em conjunto, para não virar mais um sistema isolado."
+        "title": "Um conjunto, não vários sistemas isolados",
+        "text": "CRM, automações, painéis e IA pensados em conjunto, funcionando com as ferramentas que você já usa."
       },
       {
-        "title": "Acompanhamento depois da entrega",
+        "title": "Seu time aprende a usar",
         "text": "Treinamento e suporte fazem parte do trabalho, porque o resultado depende de a equipe usar."
       },
       {
@@ -184,8 +184,8 @@
     "title": "Uma equipe pequena, ",
     "titleStrong": "perto de você.",
     "text": [
-      "A INTEGRA Soluções Inteligentes nasceu em Florianópolis para ajudar empresas a transformar tecnologia em rotina de trabalho que funciona.",
-      "Combinamos conhecimento de processos, de sistemas e de inteligência artificial, e acompanhamos cada projeto de perto, da conversa inicial ao treinamento da equipe."
+      "A INTEGRA Soluções Inteligentes é uma equipe pequena, de Florianópolis, que organiza o atendimento comercial com processos, dados e inteligência artificial.",
+      "Combinamos conhecimento de processos, de sistemas e de IA para o time comercial trabalhar com mais clareza, da conversa inicial ao treinamento da equipe."
     ],
     "people": [
       {
@@ -206,7 +206,7 @@
     "_status": "RASCUNHO",
     "title": "Vamos conversar sobre a ",
     "titleStrong": "sua operação?",
-    "text": "Conte em poucas linhas o que a sua empresa faz e onde o trabalho trava. Respondemos com os próximos passos possíveis.",
+    "text": "Conte em poucas linhas como o seu comercial atende os leads hoje e onde o trabalho trava. Respondemos com os próximos passos possíveis.",
     "primary": "Fale no WhatsApp",
     "secondary": "Prefere e-mail? Escreva para nós",
     "hint": "A conversa inicial serve para entender o seu caso. Não é preciso ter nada pronto."

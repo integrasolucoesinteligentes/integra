@@ -25,7 +25,8 @@
     "instagramHandle": "@integrasolucoesinteligentes",
     "linkedinCompany": "https://www.linkedin.com/company/integra-solucoes-inteligentes",
     "linkedinFounder": "https://www.linkedin.com/in/urielsilvademoura/",
-    "linkedinTais": "https://www.linkedin.com/in/ta%C3%ADs-paula-moura-a54224435/"
+    "linkedinTais": "https://www.linkedin.com/in/ta%C3%ADs-paula-moura-a54224435/",
+    "formEndpoint": "https://n8n.integrasolucoesinteligentes.com/webhook/integra-contato"
   },
   "nav": {
     "items": [
@@ -206,7 +207,7 @@
     "_status": "RASCUNHO",
     "title": "Vamos conversar sobre a ",
     "titleStrong": "sua operação?",
-    "text": "Conte em poucas linhas como o seu comercial atende os leads hoje e onde o trabalho trava. Respondemos com os próximos passos possíveis.",
+    "text": "Conte em poucas linhas como o seu comercial atende os leads hoje e onde o trabalho trava. Respondemos com os próximos passos possíveis, por e-mail ou WhatsApp.",
     "primary": "Fale no WhatsApp",
     "secondary": "Prefere e-mail? Escreva para nós",
     "hint": "A conversa inicial serve para entender o seu caso. Não é preciso ter nada pronto."
@@ -223,20 +224,20 @@
     "metaDescription": "Como a INTEGRA trata dados pessoais neste site, em conformidade com a Lei Geral de Proteção de Dados (LGPD).",
     "updated": "20/11/2026",
     "back": "Voltar ao início",
-    "_status": "Revisada em 20/11/2026 contra a LGPD (Lei 13.709/2018) em uma revisão assistida por IA, que não substitui parecer de advogado. Pontos que dependem de decisão do Uriel: prazo de retenção e eventual nomeação de encarregado.",
+    "_status": "Revisada em 20/11/2026 contra a LGPD (Lei 13.709/2018) em uma revisão assistida por IA, que não substitui parecer de advogado. Retenção de 24 meses e encarregado (Uriel) definidos em 20/11/2026. Incluído o formulário de contato do site (n8n da INTEGRA).",
     "sections": [
       {
         "h": "Quem somos",
         "p": [
           "Este site é mantido pela INTEGRA Soluções Inteligentes, CNPJ 50.058.642/0001-10, de Florianópolis/SC, que atua como controladora dos dados pessoais descritos nesta página.",
-          "Para qualquer assunto sobre privacidade e dados pessoais, escreva para privacidade@integrasolucoesinteligentes.com. Esse é o nosso canal para os titulares de dados."
+          "Para qualquer assunto sobre privacidade e dados pessoais, escreva para privacidade@integrasolucoesinteligentes.com. Esse é o nosso canal para os titulares de dados. O encarregado pelo tratamento de dados pessoais é Uriel, fundador da INTEGRA."
         ]
       },
       {
         "h": "Quais dados tratamos",
         "p": [
-          "Este site não tem formulários, não cria contas e não usa cookies de publicidade nem de rastreamento. As fontes de texto são servidas pelo próprio site.",
-          "Tratamos dados pessoais apenas quando você escolhe falar conosco por WhatsApp ou e-mail: nome, telefone ou e-mail, empresa e o conteúdo da sua mensagem.",
+          "Este site tem um formulário de contato. Ele não cria contas e o site não usa cookies de publicidade nem de rastreamento. As fontes de texto são servidas pelo próprio site.",
+          "Pelo formulário, tratamos os dados que você escolhe preencher: nome, e-mail, empresa, WhatsApp (opcional), assunto (opcional) e o conteúdo da sua mensagem. Registramos também a data e a hora do envio e a sua concordância com esta política. Se preferir, você pode falar conosco por WhatsApp ou e-mail, e nesse caso tratamos nome, telefone ou e-mail, empresa e o conteúdo da mensagem.",
           "A hospedagem registra dados técnicos de acesso, como endereço IP, data e hora e tipo de navegador, necessários para a segurança e o funcionamento do site."
         ]
       },
@@ -257,13 +258,13 @@
         "h": "Com quem compartilhamos",
         "p": [
           "Não vendemos os seus dados nem os compartilhamos para fins de marketing de terceiros.",
-          "As mensagens passam pelos serviços que você escolhe usar para falar conosco, como o WhatsApp e o seu provedor de e-mail, cada um com a sua política de privacidade. O site é hospedado em infraestrutura de terceiros (Vercel) e o nosso e-mail é operado pela Zoho, que podem processar dados em outros países. Nesses casos adotamos fornecedores que oferecem garantias de proteção compatíveis com a LGPD (art. 33)."
+          "As mensagens enviadas pelo formulário são recebidas por uma ferramenta de automação (n8n) operada pela INTEGRA em servidor contratado de um provedor de hospedagem, e ficam acessíveis apenas à equipe da INTEGRA. As mensagens por WhatsApp e e-mail passam pelos serviços que você escolhe usar para falar conosco, cada um com a sua política de privacidade. O site é hospedado em infraestrutura de terceiros (Vercel) e o nosso e-mail é operado pela Zoho, que podem processar dados em outros países. Nesses casos adotamos fornecedores que oferecem garantias de proteção compatíveis com a LGPD (art. 33)."
         ]
       },
       {
         "h": "Por quanto tempo guardamos",
         "p": [
-          "Guardamos a conversa enquanto ela estiver em andamento e, se não houver contratação, por até 24 meses após o último contato, ou por mais tempo se a lei exigir. Depois disso, apagamos ou anonimizamos. Os registros técnicos de acesso são mantidos pelo período definido pelo provedor de hospedagem."
+          "Guardamos a conversa enquanto ela estiver em andamento e, se não houver contratação, por até 24 meses após o último contato, ou por mais tempo se a lei exigir. Cada mensagem enviada pelo formulário recebe uma data de eliminação 24 meses após o envio. Depois disso, apagamos ou anonimizamos. Os registros técnicos de acesso são mantidos pelo período definido pelo provedor de hospedagem."
         ]
       },
       {
@@ -303,5 +304,31 @@
       "Inteligência artificial aplicada a negócios",
       "Mercado imobiliário"
     ]
+  },
+  "form": {
+    "title": "Envie uma mensagem",
+    "labels": {
+      "nome": "Nome",
+      "empresa": "Empresa",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp (opcional)",
+      "interesse": "Assunto",
+      "mensagem": "Como podemos ajudar?"
+    },
+    "interesseOptions": [
+      "Atendimento e distribuição de leads",
+      "Painéis e indicadores (BI)",
+      "Agentes de IA",
+      "Automações e integrações",
+      "Ainda não sei, quero conversar"
+    ],
+    "interesseDefault": "Selecione (opcional)",
+    "consent": "Concordo que a INTEGRA use os dados informados para responder a esta mensagem, conforme a",
+    "consentLink": "política de privacidade",
+    "submit": "Enviar mensagem",
+    "sending": "Enviando...",
+    "success": "Mensagem recebida. Respondemos em até 2 dias úteis.",
+    "error": "Não foi possível enviar agora. Tente novamente ou fale conosco pelo WhatsApp ou por e-mail.",
+    "retention": "Guardamos a mensagem por até 24 meses após o último contato."
   }
 }

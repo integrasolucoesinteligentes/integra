@@ -4,7 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 import content from '../content/content.pt-BR.json';
-const { hero, pillars, process, audience, differentials, about, cta, contact: c } = content;
+const { hero, pillars, process, audience, differentials, about, cta, form: f, contact: c } = content;
 const wa = `https://wa.me/${c.whatsappNumber}?text=${encodeURIComponent(c.whatsappMessage)}`;
 const mail = `mailto:${c.email}?subject=${encodeURIComponent(c.emailSubject)}&body=${encodeURIComponent(c.emailBody)}`;
 const initial = (n: string) => n.trim().charAt(0).toUpperCase();
@@ -122,8 +122,74 @@ const initial = (n: string) => n.trim().charAt(0).toUpperCase();
           <a class="btn btn-ghost" href={mail}>{cta.secondary}</a>
         </div>
         <p class="hint">{cta.hint}</p>
+
+        <form class="contact-form" id="form-contato" method="post" action={c.formEndpoint} novalidate data-endpoint={c.formEndpoint}>
+          <h3>{f.title}</h3>
+          <div class="grid">
+            <label>{f.labels.nome}<input name="nome" type="text" autocomplete="name" required maxlength="120" /></label>
+            <label>{f.labels.empresa}<input name="empresa" type="text" autocomplete="organization" maxlength="160" /></label>
+            <label>{f.labels.email}<input name="email" type="email" autocomplete="email" required maxlength="160" /></label>
+            <label>{f.labels.whatsapp}<input name="whatsapp" type="tel" autocomplete="tel" maxlength="30" /></label>
+          </div>
+          <label>{f.labels.interesse}
+            <select name="interesse">
+              <option value="">{f.interesseDefault}</option>
+              {f.interesseOptions.map((o) => <option value={o}>{o}</option>)}
+            </select>
+          </label>
+          <label>{f.labels.mensagem}<textarea name="mensagem" rows="5" required maxlength="2000"></textarea></label>
+          <div class="hp" aria-hidden="true"><label>Não preencha este campo<input name="website" type="text" tabindex="-1" autocomplete="off" /></label></div>
+          <label class="check"><input name="consentimento" type="checkbox" required /> <span>{f.consent} <a href="/privacidade/" target="_blank" rel="noopener">{f.consentLink}</a>. {f.retention}</span></label>
+          <button class="btn btn-primary" type="submit" data-sending={f.sending}>{f.submit}</button>
+          <p class="form-status" role="status" aria-live="polite" data-success={f.success} data-error={f.error}></p>
+        </form>
       </div>
     </section>
   </main>
   <Footer />
 </Base>
+
+<script is:inline>
+(function () {
+  var form = document.getElementById('form-contato');
+  if (!form) return;
+  var status = form.querySelector('.form-status');
+  var btn = form.querySelector('button[type=submit]');
+  var label = btn.textContent;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    status.className = 'form-status';
+    status.textContent = '';
+    var d = new FormData(form);
+    var nome = String(d.get('nome') || '').trim();
+    var email = String(d.get('email') || '').trim();
+    var msg = String(d.get('mensagem') || '').trim();
+    if (nome.length < 2 || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) || msg.length < 5 || !form.consentimento.checked) {
+      status.className = 'form-status err';
+      status.textContent = 'Preencha nome, e-mail e mensagem e marque a concordância com a política de privacidade.';
+      return;
+    }
+    btn.disabled = true;
+    btn.textContent = btn.getAttribute('data-sending');
+    var body = {
+      nome: nome, empresa: d.get('empresa'), email: email, whatsapp: d.get('whatsapp'),
+      interesse: d.get('interesse'), mensagem: msg, website: d.get('website'),
+      consentimento: form.consentimento.checked
+    };
+    fetch(form.getAttribute('data-endpoint'), {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body)
+    }).then(function (r) {
+      if (!r.ok) throw new Error('http ' + r.status);
+      form.reset();
+      status.className = 'form-status ok';
+      status.textContent = status.getAttribute('data-success');
+    }).catch(function () {
+      status.className = 'form-status err';
+      status.textContent = status.getAttribute('data-error');
+    }).then(function () {
+      btn.disabled = false;
+      btn.textContent = label;
+    });
+  });
+})();
+</script>
